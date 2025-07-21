@@ -1,0 +1,129 @@
+/* Login.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #c84eb8, #8f94fb);
+  padding: 20px;
+}
+.welcome-heading {
+  position: absolute;
+  top: 40px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 100%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.welcome-heading span {
+  color: #ffea00;
+}
+
+
+.login-form {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  animation: slideIn 0.5s ease-out;
+}
+
+.login-form h2 {
+  margin-bottom: 25px;
+  color: #333;
+  text-align: center;
+  font-size: 28px;
+}
+
+.login-form input {
+  width: 92%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  color: #000; /* Black input text */
+  caret-color: #4e54c8; /* Blinking cursor color */
+  background-color: #fff; /* Optional: ensures white background */
+}
+
+
+.login-form input:focus {
+  border-color: #4e54c8;
+  outline: none;
+  box-shadow: 0 0 8px rgba(78, 84, 200, 0.2);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4e54c8;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #3b41a1;
+}
+
+.login-form p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-form a {
+  color: #4e54c8;
+  text-decoration: none;
+  font-weight: 500;
+}
+input::placeholder {
+  color: #888; /* Optional: subtle placeholder color */
+}
+
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 30px 20px;
+  }
+
+  .login-form h2 {
+    font-size: 24px;
+  }
+}
