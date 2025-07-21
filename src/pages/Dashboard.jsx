@@ -22,10 +22,14 @@ export default function Dashboard() {
         <button className="dashboard-button">🎤 Start English Tutor Bot</button>
       </Link>
 
-      <div className="dashboard-links">
+      <Link to="/module">
+        <button className="dashboard-button">🎤 Modules</button>
+      </Link>
+
+      {/* <div className="dashboard-links">
         <Link to="/voicebot">Start Speaking with AI 🎙</Link>
         <Link to="/story">🎥 Create Story</Link>
-      </div>
+      </div> */}
     </div>
   );
 }
